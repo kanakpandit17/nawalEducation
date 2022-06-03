@@ -81,6 +81,49 @@ export class RegisterComponent implements OnInit {
         }
       ]
     },
+
+    {
+      type: "checkbox",
+      label: "Student",
+      inputType: "CheckboxComponent",
+      name: "CheckboxComponent",
+      validations: [
+        {
+          name: "required",
+          validator: Validators.required,
+          message: "Choice Required"
+        }
+      ]
+    },
+    
+    {
+    type: "checkbox",
+    label: "Teacher",
+    inputType: "CheckboxComponent",
+    name: "CheckboxComponent",
+    validations: [
+      {
+        name: "required",
+        validator: Validators.required,
+        message: "Choice Required"
+      }
+    ]
+  },
+
+  {
+ type: "checkbox",
+  label: "Parent",
+  inputType: "CheckboxComponent",
+  name: "CheckboxComponent",
+  validations: [
+    {
+      name: "required",
+      validator: Validators.required,
+      message: "Choice Required"
+    }
+  ]
+},
+
     {
       type: "button",
       label: "Save"
